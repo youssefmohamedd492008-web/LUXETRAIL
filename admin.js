@@ -1,44 +1,29 @@
-let deleteButtons = document.querySelectorAll(".delete");
+function login(){
 
-deleteButtons.forEach(button => {
+let username =
+document.getElementById("username").value;
 
-    button.addEventListener("click", function(){
 
-        let row = this.closest("tr");
-
-        if(row){
-            row.remove();
-            alert("Deleted Successfully");
-        }
-
-    });
-
-});
+let password =
+document.getElementById("password").value;
 
 
 
-let confirmButtons = document.querySelectorAll(".confirm");
+if(username === "admin" && password === "123456"){
 
 
-confirmButtons.forEach(button => {
-
-    button.addEventListener("click", function(){
-
-        let row = this.closest("tr");
-
-        let status = row.querySelector("span");
+window.location.href="dashboard.html";
 
 
-        if(status){
+}
 
-            status.innerHTML = "Confirmed";
-            status.className = "confirmed";
-
-        }
+else{
 
 
-        this.remove();
+document.getElementById("message").innerHTML =
+"Wrong Username or Password";
 
-    });
 
-});
+}
+
+}
