@@ -316,4 +316,104 @@ border-radius:10px;
 
 cursor:pointer;
 
+}/* Admin Login New Design */
+
+
+.admin-login{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:
+linear-gradient(
+rgba(0,0,0,.7),
+rgba(0,0,0,.7)
+),
+url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
+
+background-size:cover;
+
+}
+
+
+
+.login-card{
+
+background:white;
+
+width:400px;
+
+padding:45px;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 20px 50px #0005;
+
+}
+
+
+
+.login-card h1{
+
+font-family:serif;
+
+color:#d4af37;
+
+font-size:40px;
+
+}
+
+
+
+.login-card input{
+
+width:100%;
+
+padding:15px;
+
+margin:10px 0;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+}
+
+
+
+.login-card button{
+
+width:100%;
+
+padding:15px;
+
+background:#d4af37;
+
+border:none;
+
+border-radius:30px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+font-size:17px;
+
+}
+
+
+
+#message{
+
+margin-top:15px;
+
+color:red;
+
 }
